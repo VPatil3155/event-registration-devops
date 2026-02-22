@@ -9,11 +9,13 @@ def register():
         name = request.form['name']
         email = request.form['email']
         event = request.form['event']
+        phone = request.form['phone']
 
         return f"""
         <h2>Registration Successful!</h2>
         <p>Name: {name}</p>
         <p>Email: {email}</p>
+        <p>Phone: {phone}</p>
         <p>Event: {event}</p>
         <a href="/">Back</a>
         """
