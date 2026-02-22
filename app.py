@@ -12,13 +12,14 @@ def register():
         phone = request.form['phone']
 
         return f"""
-        <h2>Registration Successful!</h2>
-        <p>Name: {name}</p>
-        <p>Email: {email}</p>
-        <p>Phone: {phone}</p>
-        <p>Event: {event}</p>
-        <a href="/">Back</a>
-        """
+<h2 style='color:green;'>🎉 Thank You for Registering!</h2>
+<p><b>Name:</b> {name}</p>
+<p><b>Email:</b> {email}</p>
+<p><b>Selected Event:</b> {event}</p>
+<hr>
+<p>Your registration has been recorded successfully.</p>
+<a href="/">Register Another User</a>
+"""
 
     return render_template('index.html')
 
