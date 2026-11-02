@@ -18,7 +18,7 @@ def register():
 <p><b>Selected Event:</b> {event}</p>
 <hr>
 <p>Your registration has been recorded successfully! this is done</p>
-<a href="/">Register Another User</a>
+<a href="/"></a>
 """
 
     return render_template('index.html')
